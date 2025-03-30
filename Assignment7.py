@@ -5,7 +5,7 @@
 
 
 #import dash
-from dash import dcc, HTML, Output, Input, ctx
+from dash import dcc, html, Output, Input, ctx
 import plotly.express as px
 import pandas as pd
 
