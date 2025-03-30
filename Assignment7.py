@@ -35,7 +35,7 @@ def graph_up(country, data):
 
 #layout Dash
 app = Dash(__name__)
-server = app.run_server(debug=True, port=10000, host='0.0.0.0')
+server = app.server(debug=True, port=10000, host='0.0.0.0')
 
 app.layout = html.Div([
     html.H1("FIFA Soccer World Cup Winners and Runner-ups"),
