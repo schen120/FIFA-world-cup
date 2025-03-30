@@ -5,11 +5,9 @@
 
 
 import dash
-from dash import dcc, html
+from dash import dcc, HTML, Output, Input, ctx
 import plotly.express as px
 import pandas as pd
-from dash import Output, Input
-from dash import ctx
 
 #create dataFrames
 world_cup = pd.DataFrame({
