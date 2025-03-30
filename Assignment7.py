@@ -4,8 +4,8 @@
 # In[3]:
 
 
-import dash
-from dash import dcc, html, Output, Input, ctx
+#import dash
+from dash import Dash, dcc, html, Output, Input, ctx
 import plotly.express as px
 import pandas as pd
 
@@ -34,7 +34,7 @@ def graph_up(country, data):
     return fig
 
 #layout Dash
-app = dash.Dash()
+app = Dash(__name__)
 server = app.run_server(debug=True, port=10000, host='0.0.0.0')
 
 app.layout = html.Div([
