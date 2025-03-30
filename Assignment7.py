@@ -35,7 +35,7 @@ def graph_up(country, data):
 
 #layout Dash
 app = Dash(__name__)
-server = app.server(debug=True, port=10000, host='0.0.0.0')
+server = app.server
 
 app.layout = html.Div([
     html.H1("FIFA Soccer World Cup Winners and Runner-ups"),
@@ -116,16 +116,9 @@ def update_country_win(country_win, year_win):
         fig = px.choropleth(locationmode="country names", scope="world", title="World Map")
         return fig, None, None
         
-app.run(debug=True)
+app.run_server(debug=True, port=10000, host='0.0.0.0')
 
 
-# In[ ]:
-
-
-
-
-
-# In[ ]:
 
 
 
